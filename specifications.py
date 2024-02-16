@@ -25,6 +25,7 @@ Vn      = 100e-6    # Output RMS noise, no signal; small signal bandwidth.
 
 Fr_low = 60 # -3dB receive amplifier
 Fr_high = 15e3 # -3dB receive amplifier
+
 # Create table
 
 specs = []

@@ -1,0 +1,11 @@
+coupledCoils
+L1 P001 0 L value={L_s} iinit=0
+R1 N001 P001 R value={R_s} noisetemp=0 noiseflow=0 dcvar=0
+L2 P002 0 L value={L_r} iinit=0
+C1 out 0 C value={C_r} vinit=0
+R2 out P002 R value={R_r} noisetemp=0 noiseflow=0 dcvar=0
+V1 N001 0 V value=0 dc=0 dcvar=0 noise=0
+R4 out 0 R value={R_iRT} noisetemp=0 noiseflow=0 dcvar=0
+C2 out 0 C value={C_iRT} vinit=0
+K1 L1 L2 {k_c}
+.end

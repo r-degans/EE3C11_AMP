@@ -1,0 +1,6 @@
+"Coupled Coils Simple"
+L1 N002 0 L value={L_s} iinit=0
+R1 N001 N002 R value={R_s} noisetemp=0 noiseflow=0 dcvar=0
+V1 N001 0 V value=0 dc=0 dcvar=0 noise=0
+E1 out 0 N002 0 {k_c*sqrt(L_r/L_s)}
+.end

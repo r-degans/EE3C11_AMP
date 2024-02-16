@@ -1,0 +1,58 @@
+<a id=""></a><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<meta name="Language" content="English"/>
+<title>"Determination of the coupling factor"</title><link rel="stylesheet" href="css/slicap.css">
+<script>MathJax = {tex:{tags: 'ams', inlineMath:[['$','$'],]}, svg:{fontCache:'global'}};</script>
+<script type="text/javascript" id="MathJax-script" async  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head><body><div id="top"><h1>Determination of the coupling factor</h1></div>
+<h2>Simple network model of the transfer measurement with the HP3577A</h2>
+<figure><img src="img/coupledCoilsSimple.svg" alt="" style="width:400px">
+</figure>
+<h2>Determination of the coupling factor using this model and the measurement results</h2>
+<p>
+We will now determine the coupling factor of the two coupled inductors.
+To this end, we determine the Laplace transform of the voltage transfer from
+the source "V1" to the voltage at node "out". We use numeric analysis and
+substitute $s=2\pi j f_m$, where $f_m$ is the measurement frequency.
+Since the coupling factor has no numeric value it will remain symbolic in this
+gain expression.
+We then solve the coupling factor by equating this expresion with the measured
+value..</p>
+<p>The transfer function is a function of the coupling factor:</p>
+\begin{equation}
+A_{t}=\frac{0.0006918 k_{c} s}{3.877 \cdot 10^{-5} s + 1}
+\end{equation}
+<p>The squared magnitude of this transfer at the measurement
+frequency of this circuit is obtained as:</p>
+\begin{equation}
+A_{tsq}=17.84 k_{c}^{2}
+\end{equation}
+<p>The measured value $A_{sq}$ of the squared voltage transfer at
+this frequency amounts:</p>
+\begin{equation}
+A_{sq}=4.266 \cdot 10^{-6}
+\end{equation}
+<p>Solving $A_{sq}=A_{tsq}$ yields:</p>
+\begin{equation}
+k_{c}=0.000489
+\end{equation}
+<h2>Modeled magnitude characteristic</h2>
+<p>Substitution of the value of $k_c$ in $A_t$ yields:</p>
+\begin{equation}
+A_{t}=\frac{3.383 \cdot 10^{-7} s}{3.877 \cdot 10^{-5} s + 1}
+\end{equation}
+<p>The figure below shows the magnitude plot. It should correspond
+with the one measured with the network analyser. If not, the values of the
+model parameters are incorrect, or the model is too simple and a more
+elaborated model should be used.</p>
+<figure><img src="img/coupledCoilsSimpledBmagTransfer.svg" alt="" style="width:600px">
+</figure>
+<!-- INSERT -->
+<div id="footnote">
+<p>Go to <a href="Coupled-Coils-Simple_index.html">Coupled-Coils-Simple_index</a></p>
+<p>SLiCAP: Symbolic Linear Circuit Analysis Program, Version 1.6.0 &copy 2009-2024 SLiCAP development team</p>
+<p>For documentation, examples, support, updates and courses please visit: <a href="https://analog-electronics.tudelft.nl">analog-electronics.tudelft.nl</a></p>
+<p>Last project update: 2024-02-16 15:54:32</p>
+</div></body></html>

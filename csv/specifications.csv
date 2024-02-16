@@ -1,0 +1,22 @@
+symbol, description, value, units, type
+Vi_max,Maximum input voltage; peak,1,Vpk,functional
+Zin,Minimum input impedance receive amp,2000.00000000000,Ohm,functional
+F_low,-3dB frequency,60,Hz,functional
+F_high,-3dB frequency,15000.0000000000,Hz,functional
+Fpwr_low,-3dB frequency; full power,60,Hz,functional
+Fpwr_high,-3dB frequency; full power,60,Hz,functional
+Vo_max,Vpk max at output&#44; coil in center of loop.,0.250000000000000,Vpk,functional
+Vn,Noise voltage rms receive amp; no signal,0.000100000000000000,Vrms,functional
+Fr_low,-3dB frequency,60,Hz,functional
+Fr_high,-3dB frequency,15000.0000000000,Hz,functional
+L_s,Send coil inductance,0.000314000000000000,H,interface
+R_s,Send coil resistance,8.10000000000000,Omega,interface
+C_s,Send coil capacitance,1.09072109517731e-10,F,interface
+L_r,Receive coil inductance,0.100000000000000,H,interface
+R_r,Receive coil resistance,235,Omega,interface
+C_r,Receive coil capacitance,2.53302959105844e-11,F,interface
+R_iRT,Test receiver input impedance,1000000.00000000,Omega,test
+C_iRT,Test receiver input capacitance,2.20000000000000e-10,F,test
+f_m,Test measurement frequency,1000.00000000000,Hz,test
+A_t,Send-receive voltage transfer at test frequency,-53.7000000000000,dB,test
+k_c,Send-receive coil coupling factor,0.000488693747853762,,interface
