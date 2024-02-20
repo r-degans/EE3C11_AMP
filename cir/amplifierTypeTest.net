@@ -1,0 +1,13 @@
+* C:\users\physphase\Desktop\School\Electronics\EE3C11_AMP\cir\amplifierTypeTest.asc
+L1 P001 0 L value={L_s} iinit=0
+C1 N001 0 C value={C_s} vinit=0
+R1 N001 P001 R value={R_s} noisetemp=0 noiseflow=0 dcvar=0 dcvarlot=0
+L2 P002 0 L value={L_r} iinit=0
+C2 N002 0 C value={C_r} vinit=0
+R2 N002 P002 R value={R_r} noisetemp=0 noiseflow=0 dcvar=0 dcvarlot=0
+XU1 N001 0 N003 0 ABCD at={A_T} bt={B_T} ct={C_T} dt={D_T}
+V1 N003 0 V value=0 dc=0 dcvar=0 noise=0
+XU2 Vout 0 N002 0 ABCD at={A_T} bt={B_T} ct={C_T} dt={D_T}
+K1 L1 L2 {k_c}
+.backanno
+.end
